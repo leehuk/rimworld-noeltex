@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingSetMakerDef[defName="Reward_ItemsStandard"]/root/options/li[maxMarketValue]/thingSetMaker/options/li/thingSetMaker[makingFaction="Empire"]/thingSetMaker/fixedParams/filter/thingSetMakerTagsToAllow[li="RewardStandardHighFreq"]</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingSetMakerDef[defName="Reward_ItemsStandard"]/root/options/li[maxMarketValue]/thingSetMaker/options/li/thingSetMaker[makingFaction="Empire"]/thingSetMaker/fixedParams/filter/thingSetMakerTagsToAllow</xpath>
+            <value><li>RewardStandardHighFreq</li></value>
+        </nomatch>
+    </Operation>
+</Patch>

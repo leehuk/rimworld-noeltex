@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingSetMakerDef[defName="Reward_ItemsStandard"]/root/options/li[maxMarketValue]/thingSetMaker/options/li/thingSetMaker[makingFaction="Empire"]/thingSetMaker/fixedParams/filter/tradeTagsToAllow/li[text()="PsychicWeapon"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingSetMakerDef[defName="Reward_ItemsStandard"]/root/options/li[maxMarketValue]/thingSetMaker/options/li/thingSetMaker[makingFaction="Empire"]/thingSetMaker/fixedParams/filter/tradeTagsToAllow/li[text()="PsychicApparel"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[@Name="BasePsychicWeaponMelee"]/thingSetMakerTags</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[@Name="PsychicApparelBase"]/thingSetMakerTags</xpath>
+    </Operation>
+</Patch>
